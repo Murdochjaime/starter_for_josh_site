@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Your Template Name
+Template Name: CV
 */
 ?>
 <?php require_once('page_header.php'); ?>
