@@ -40,7 +40,7 @@
 
 <body>
 
-<header class="container-fluid small-page-bg">
+<header class="container-fluid" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
     <div class="container"> 
     <nav class="navbar navbar-expand-md navbar-dark">
         <!-- Brand -->
@@ -72,10 +72,9 @@
 
       <div class="smallpage-tag">
       <h1 class="smallpage-title">
-        Projects
+      <?php the_field('projectsheadertitle'); ?> 
       </h1>
-    </div>
-
+ 
     </div> <!-- container -->
     <?php wp_head(); ?> <!-- very important that this code is added-->
     </header>
