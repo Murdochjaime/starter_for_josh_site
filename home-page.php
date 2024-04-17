@@ -10,9 +10,6 @@
         <p class="particle"><?php the_field('subtitleforaboutme'); ?></p>
 <p class="about-text"><?php the_field('paragraphforaboutme'); ?></p>
 
-<div class="blocker">
-
-</div>
 
         </div> <!-- container -->
     </section>
@@ -26,8 +23,7 @@
 <div class="col-md-4">
 <img class="img-fluid" src="<?php
 $image = get_field('articleimage');
-?>
-<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+?><?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
 <h4 class="article-title"><?php the_field('articletitle'); ?></h4>
 <p class="date" ><?php the_field('articledate'); ?></p>
 <p class="article-p"><?php the_field('articleexcerpt'); ?> </p>
