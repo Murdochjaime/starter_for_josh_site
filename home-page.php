@@ -9,8 +9,6 @@
         <h2><?php the_field('titleforaboutme'); ?></h2> <!--  custom field for the aboutme content-->
         <p class="particle"><?php the_field('subtitleforaboutme'); ?></p>
 <p class="about-text"><?php the_field('paragraphforaboutme'); ?></p>
-
-
         </div> <!-- container -->
     </section>
 
@@ -32,26 +30,23 @@ $image = get_field('articleimage');
 </div>
 
 <div class="col-md-4">
-    <img class="img-fluid" src="http://170.187.231.66/~mesh1/wp-content/themes/starter_for_josh_site/images/port2.jpg" alt="robot">
-    
-    <h4 class="article-title">PORTRAIT</h4>
-    <p class="article-date">Friday November 2030</p>
-    <p class="article-p"> STS has never been shy of seeking new terrains of  investigation. More and  more  STS s cholars are  starting to explore and intervene in the arts.  This object of study  brings  new challenges and  opportunities that we want  to explore in this session.   We would  like to gather first of all simply  new kinds of  knowledge arising from  STS study  of the arts.
-    </p>
-    
-        <a class="readmore" href="#">CONTINUE READING </a>
-       
+<img class="img-fluid" src="<?php
+$image = get_field('articleimagemiddle');
+?><?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+<h4 class="article-title"><?php the_field('articletitlemiddle'); ?></h4>
+<p class="date" ><?php the_field('articledatemiddle'); ?></p>
+<p class="article-p"><?php the_field('articleexcerptmiddle'); ?> </p>
+<a href="<?php the_field('readmoremiddle'); ?>" class="readmore">CONTINUE READING</a>
     </div>
     
     <div class="col-md-4">
-        <img class="img-fluid" src="http://170.187.231.66/~mesh1/wp-content/themes/starter_for_josh_site/images/port3.jpg" alt="map">
-        
-        <h4 class="article-title">PORTRAIT</h4>
-        <p class="article-date">Friday November 2030</p>
-        <p class="article-p"> STS has never been shy of seeking new terrains of  investigation. More and  more  STS s cholars are  starting to explore and intervene in the arts.  This object of study  brings  new challenges and  opportunities that we want  to explore in this session.   We would  like to gather first of all simply  new kinds of  knowledge arising from  STS study  of the arts.
-        </p>
-        
-            <a class="readmore" href="#">CONTINUE READING </a>
+        <img class="img-fluid" src="<?php
+$image = get_field('articleimageright');
+?><?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+<h4 class="article-title"><?php the_field('articletitleright'); ?></h4>
+<p class="date" ><?php the_field('articledateright'); ?></p>
+<p class="article-p"><?php the_field('articleexcerptright'); ?> </p>
+<a href="<?php the_field('readmoreright'); ?>" class="readmore">CONTINUE READING</a>
            
         </div>
           
