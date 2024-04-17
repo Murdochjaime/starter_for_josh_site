@@ -73,9 +73,7 @@ wp_nav_menu( array(
         <h1><?php the_field('maintagline'); ?></h1>
               </div><!-- container-->
 
-      <h1>
-        Games Design For The Future
-      </h1>
+   
     </div>
 
     </div> <!-- container -->
